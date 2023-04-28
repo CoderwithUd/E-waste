@@ -1,0 +1,258 @@
+body{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.banner1,.banner2,.banner3,.banner4{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+img{
+	width: 120%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	animation: zoom-out 3s linear infinite;
+	filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+@keyframes zoom-out{
+	100%{
+		width: 100%;
+	}
+}
+.text{
+	width: 600px;
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	color: rgb(27, 2, 26);
+	animation: textup 12s linear infinite;
+	transform: translateY(100px);
+}
+@keyframes textup{
+	10%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+.text h1{
+	margin-bottom: 10px;
+	font-size:45px;
+	color: yellow;
+	font-family: 'Playball', cursive;
+}
+.text p{
+	font-size: 25px;
+	line-height: 18px;
+	margin-top: 80px;
+	color: rgb(255, 198, 198);
+	
+}
+.text span{
+	background-color: red;
+	height: 1px;
+	width: 100px;
+	position: absolute;
+	left: 0;
+	
+}
+.banner1{
+	animation: slidel 12s linear infinite;
+}
+.banner2{
+	animation: slide2 12s linear infinite;
+}
+.banner3{
+	animation: slide3 12s linear infinite;
+}
+.banner4{
+	animation: slide4 12s linear infinite;
+}
+@keyframes slide1 {
+	0%{
+		visibility: visible;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility:visible;
+	}
+	
+}
+@keyframes slide2 {
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+		50%{
+		visibility: visible;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+	}
+	
+}
+@keyframes slide3 {
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: visible;
+	}
+	100%{
+		visibility: hidden;
+	}
+	
+}
+
+@keyframes slide4 {
+	0%{
+		visibility:hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+	
+}
+/*.text text_1{
+	animation-delay: 0s;
+}
+.text text_2{
+	animation-delay: 0s;
+}
+.text text_3{
+	animation-delay: 0s;
+}
+.text text_4{
+	animation-delay: 0s;
+}*/
+
+*{
+			
+	font-family: 'Playball', cursive;
+	font-size: 20px;
+}
+.nav{
+	/*border: 2px solid red;*/
+	display: flex;
+	flex-wrap: wrap;	
+	margin: 2px 2px;
+	padding: 2px 2px ;
+	justify-items: center;
+	justify-content: center;
+	background-color: rgb(83, 205, 221);
+	color: rgb(238, 227, 227);
+	position: sticky;
+	border-radius: 25PX;
+	
+}
+.naviteam{
+	/*border: 2px solid blue;*/
+	padding: 2px 2px ;
+	margin: 2px 2px;
+}
+#logo{
+	background-image: url("Untitled-1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 55px ;
+	width:55px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#navmenu{
+	display: flex;
+	justify-items: center;
+	padding: 2px 2px;
+	margin: 2px 200px ;
+}
+.meau{
+	padding: 2px 2px ;
+	margin: 2px 20px ;
+}
+.meau a{
+	text-decoration: none;
+	font-size: 25px;
+	color: rgb(238, 227, 227);
+	color: black;
+}
+.meau a:hover{
+	color: yellow;
+	border: 2px solid white;
+}
+.container{
+	display: flex;
+}
+#item1{
+	border: 2px solid red;
+}
+#iteam2{
+	border: 2px solid red;
+}
+
+.icon{
+	
+	margin: 0px 10px;
+	overflow: hidden;
+}
+.icon i{
+	color: black;
+	font-size: 15px;
+	transition: 1s;
+}
+.icon i:hover{
+	transform: translateY(-100%);
+	color: rgb(151, 20, 70);
+}
+.bottom{
+	display: flex;
+	color:wheat;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+.bottom i{
+	font-size: 25px;
+	color: antiquewhite;
+	transition: 1s;
+}
+.bottom i:hover{
+	transform: translateX(-100%);
+	color: rgb(151, 20, 70);
+}
